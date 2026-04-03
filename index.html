@@ -341,17 +341,14 @@
       width: 380px;
       height: 480px;
       background: var(--dark);
-      border: 1px solid rgba(21,52,40,0.4);
+      border: none;
       position: relative;
       overflow: hidden;
       margin: 0 auto;
     }
 
     .photo-frame::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(21,52,40,0.3) 0%, transparent 50%);
+      display: none;
     }
 
     .photo-frame::after {
@@ -979,7 +976,7 @@
 
     .cv-block {
       padding: 2.5rem;
-      border: 1px solid rgba(21,52,40,0.4);
+      border: none;
       text-align: center;
       background: rgba(21,52,40,0.06);
     }
@@ -1203,17 +1200,12 @@
       <div class="photo-frame" style="position:relative; overflow:hidden; background:#080c0a;">
 
         <!-- Photo 1 : face (triangle gauche) -->
-        <div style="position:absolute; top:0; left:0; width:100%; height:100%; clip-path:polygon(0 0, 62% 0, 38% 100%, 0 100%); background-image:url(photo-face.jpg); background-size:149%; background-position:100% 24%; background-repeat:no-repeat;"></div>
+        <div style="position:absolute; top:0; left:0; width:100%; height:100%; clip-path:polygon(0 0, 63% 0, 39% 100%, 0 100%); background-image:url(photo-face.jpg); background-size:149%; background-position:100% 24%; background-repeat:no-repeat;"></div>
 
         <!-- Photo 2 : dos (triangle droit) -->
         <div style="position:absolute; top:0; left:0; width:100%; height:100%; clip-path:polygon(62% 0, 100% 0, 100% 100%, 38% 100%); background-image:url(photo-dos.jpg); background-size:157%; background-position:0% 15%; background-repeat:no-repeat;"></div>
 
-        <!-- Barre diagonale -->
-        <div style="position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;">
-          <svg width="100%" height="100%" viewBox="0 0 380 480" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="236" y1="0" x2="144" y2="480" stroke="rgba(42,107,81,0.9)" stroke-width="2"/>
-          </svg>
-        </div>
+
 
       </div>
     </div>
